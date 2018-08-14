@@ -6,8 +6,8 @@ CREATE TABLE albums (
   id INT UNSIGNED auto_increment,
   artist  varchar(50),
   name varchar(100),
-  release_date DATE,
-  sales float,
+  release_date INT,
+  sales FLOAT,
   genre VARCHAR(255),
   PRIMARY KEY(id)
 );
