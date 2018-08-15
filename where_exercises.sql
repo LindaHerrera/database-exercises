@@ -24,10 +24,10 @@ where (first_name = 'Irena'
        or first_name = 'Maya')
       and gender = 'M';
 
-select *
+select first_name, last_name
 from employees
-where last_name like 'E%'
-      or last_name like '%E';
+  where CONCAT(last_name like 'E%'
+      or last_name like '%E');
 
 select *
 from employees
